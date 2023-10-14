@@ -192,17 +192,19 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
+//  This is a keyword in the constructor function Student and is being used to grab the name joe in the function. 
 //
 // 2. What is "this" when joe.scopeArrow() is invoked?
+// This is not refering to the object when used in an arrow function. Instead it gives you a bunch of data.
 //
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// Based of what Ive picked up from this exercise I'd say this is diffrent in an arrow function because an arrow function does not use (this) for functions or objects. Instead it uses it to get data for specfic parts of code based on where its used. 
